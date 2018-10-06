@@ -10,14 +10,12 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen"
         android:launchMode="singleTask">
-        <activity android:name=".HomeActivity">
+        <activity android:name=".AppsListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.HOME" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-        </activity>
-        <activity android:name=".AppsListActivity">
         </activity>
     </application>
 
