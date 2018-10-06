@@ -29,6 +29,13 @@ public class AppsListActivity extends Activity {
         addClickListener();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loadApps(); // in case any new apps have been installed
+        loadListView(); // in case any apps have changed rank
+    }
+
     private PackageManager manager;
     private List<AppDetail> apps;
 
