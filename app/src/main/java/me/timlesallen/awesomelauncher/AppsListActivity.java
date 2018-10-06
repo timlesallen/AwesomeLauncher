@@ -65,9 +65,6 @@ public class AppsListActivity extends Activity {
                 TextView appLabel = (TextView)convertView.findViewById(R.id.item_app_label);
                 appLabel.setText(apps.get(position).label);
 
-                TextView appName = (TextView)convertView.findViewById(R.id.item_app_name);
-                appName.setText(apps.get(position).name);
-
                 return convertView;
             }
         };
